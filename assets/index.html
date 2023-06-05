@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <meta name="title" content="Weather">
-    <meta name="description" content="weather app made by dimdevelops">  
-
-    <link rel="shortcut icon" href="./suncloud.png" type="image/svg+xml" >
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <script src="./js/app.js"></script>
-    <script src="./js/app.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="suncloud.png" type="image/x-icon">
+    <title>MyWeather</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="./images/logo.png" width="364" height="58" alt="openweather image">
-            </a>
-        
-            <div class="search-view" data-search-view>
-                <div class="search-wrapper">
-                    <input type="search" name="search" placeholder="Search By City..." autocomplete="off" 
-                    class="search-field" data-search-field>
 
-                    <span class="m-icon">search</span>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
 
-                    <button class="icon-button landing-icon has-state" aria-label="close search" data-search-toggler>
-                        <span class="m-icon">arrow_back</span>
-                    </button>
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Oops! Invalid location :/</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
                 </div>
-
-                    <div class="search-result" data-search-result>
-                        <ul class="view-list" data-search-list>
-                            <li class="view-item">
-                                <span class="m-icon">location_on</span>
-
-                                <div>
-                                    <p class="item-title">London</p>
-                                    <p class="label-2 item-subtitle">State of London, GB</p>
-                                </div>
-                                
-                            </li>
-                        </ul>
-                    </div>
-                
-                   
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
             </div>
         </div>
-    </header>
-</body>  
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
 
 </html>
